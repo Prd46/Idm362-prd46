@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYj-Pk-Zht">
-                                <rect key="frame" x="87" y="59" width="219" height="55"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goodbye world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYj-Pk-Zht">
+                                <rect key="frame" x="48" y="59" width="297" height="55"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
@@ -40,7 +40,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Right"/>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RV6-dN-Qep">
-                                <rect key="frame" x="18" y="204" width="357" height="31"/>
+                                <rect key="frame" x="18" y="214" width="357" height="31"/>
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -49,7 +49,7 @@
                             <constraint firstItem="wYj-Pk-Zht" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5am-CP-uR4"/>
                             <constraint firstItem="wYj-Pk-Zht" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BVh-kX-KRd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lQG-GF-DrO" secondAttribute="trailing" constant="40" id="NnL-Hs-Q82"/>
-                            <constraint firstItem="RV6-dN-Qep" firstAttribute="top" secondItem="wYj-Pk-Zht" secondAttribute="bottom" constant="90" id="UNx-5C-63C"/>
+                            <constraint firstItem="RV6-dN-Qep" firstAttribute="top" secondItem="wYj-Pk-Zht" secondAttribute="bottom" constant="100" id="UNx-5C-63C"/>
                             <constraint firstItem="lQG-GF-DrO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0uw-8w-c0m" secondAttribute="trailing" constant="8" symbolic="YES" id="kqa-6P-Kk3"/>
                             <constraint firstItem="0uw-8w-c0m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="nM1-9l-obg"/>
                             <constraint firstItem="0uw-8w-c0m" firstAttribute="top" secondItem="wYj-Pk-Zht" secondAttribute="bottom" constant="20" id="pzv-Ld-96c"/>
