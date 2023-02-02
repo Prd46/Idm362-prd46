@@ -12,7 +12,7 @@
 		DA2FD81B2979914200E97C05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FD81A2979914200E97C05 /* ViewController.swift */; };
 		DA2FD8202979914400E97C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2FD81F2979914400E97C05 /* Assets.xcassets */; };
 		DA2FD8232979914400E97C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2FD8212979914400E97C05 /* LaunchScreen.storyboard */; };
-		DA9E7DE72982ECD6005A0A53 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9E7DE62982ECD6005A0A53 /* main.storyboard */; };
+		DA9E7DE72982ECD6005A0A53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9E7DE62982ECD6005A0A53 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		DA2FD81F2979914400E97C05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA2FD8222979914400E97C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA2FD8242979914400E97C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA9E7DE62982ECD6005A0A53 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		DA9E7DE62982ECD6005A0A53 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 				DA2FD8162979914200E97C05 /* AppDelegate.swift */,
 				DA2FD8182979914200E97C05 /* SceneDelegate.swift */,
 				DA2FD81A2979914200E97C05 /* ViewController.swift */,
-				DA9E7DE62982ECD6005A0A53 /* main.storyboard */,
+				DA9E7DE62982ECD6005A0A53 /* Main.storyboard */,
 				DA2FD81F2979914400E97C05 /* Assets.xcassets */,
 				DA2FD8212979914400E97C05 /* LaunchScreen.storyboard */,
 				DA2FD8242979914400E97C05 /* Info.plist */,
@@ -126,7 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2FD8232979914400E97C05 /* LaunchScreen.storyboard in Resources */,
-				DA9E7DE72982ECD6005A0A53 /* main.storyboard in Resources */,
+				DA9E7DE72982ECD6005A0A53 /* Main.storyboard in Resources */,
 				DA2FD8202979914400E97C05 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
