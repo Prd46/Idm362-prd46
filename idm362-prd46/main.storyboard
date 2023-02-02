@@ -155,6 +155,7 @@
                             </label>
                             <colorWell contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WZp-7E-6x1">
                                 <rect key="frame" x="252" y="312" width="44" height="44"/>
+                                <color key="selectedColor" systemColor="labelColor"/>
                             </colorWell>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="21B-ZY-js3">
                                 <rect key="frame" x="44.666666666666657" y="422" width="304" height="30"/>
@@ -211,50 +212,57 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="604"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gir-nH-aJo">
-                                <rect key="frame" x="16" y="707" width="105" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
-                                <menu key="menu" id="XEn-8q-3qT">
-                                    <children>
-                                        <command title="C" id="sFS-Sn-bms"/>
-                                        <command title="D" id="6Rk-zj-zNC"/>
-                                        <command title="E" id="JTj-NW-kIC"/>
-                                        <command title="F" id="Euu-hr-Yq5"/>
-                                        <command title="G" id="Tiw-Er-ous"/>
-                                        <command title="A" id="eJe-Mq-tzA"/>
-                                        <command title="B" id="QDy-ef-j6A"/>
-                                    </children>
-                                </menu>
-                                <state key="normal" title="Chord"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrO-J8-hQu">
-                                <rect key="frame" x="272" y="707" width="105" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Strum!">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xQo-1b-cMt">
-                                <rect key="frame" x="144" y="697" width="105" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
-                                <menu key="menu" id="XTw-GM-xUe">
-                                    <children>
-                                        <command title="Major" id="ikr-LZ-yib"/>
-                                        <command title="Minor" id="pBN-Ut-47S"/>
-                                    </children>
-                                </menu>
-                                <state key="normal" title="Key"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="Xgv-Od-q9a">
+                                <rect key="frame" x="46.666666666666657" y="689" width="300" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gir-nH-aJo">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="45"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                        <menu key="menu" id="XEn-8q-3qT">
+                                            <children>
+                                                <command title="C" id="sFS-Sn-bms"/>
+                                                <command title="D" id="6Rk-zj-zNC"/>
+                                                <command title="E" id="JTj-NW-kIC"/>
+                                                <command title="F" id="Euu-hr-Yq5"/>
+                                                <command title="G" id="Tiw-Er-ous"/>
+                                                <command title="A" id="eJe-Mq-tzA"/>
+                                                <command title="B" id="QDy-ef-j6A"/>
+                                            </children>
+                                        </menu>
+                                        <state key="normal" title="Chord"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xQo-1b-cMt">
+                                        <rect key="frame" x="116" y="0.0" width="68" height="45"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                        <menu key="menu" id="XTw-GM-xUe">
+                                            <children>
+                                                <command title="Major" id="ikr-LZ-yib"/>
+                                                <command title="Minor" id="pBN-Ut-47S"/>
+                                            </children>
+                                        </menu>
+                                        <state key="normal" title="Key"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrO-J8-hQu">
+                                        <rect key="frame" x="248" y="0.0" width="52" height="45"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" image="play.fill" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="9AY-2e-a3o"/>
+                                    <constraint firstAttribute="width" constant="300" id="bry-cF-q4D"/>
+                                    <constraint firstItem="xQo-1b-cMt" firstAttribute="centerX" secondItem="Xgv-Od-q9a" secondAttribute="centerX" id="fgg-1o-xmd"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ENI-Ez-sHm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Xgv-Od-q9a" firstAttribute="centerX" secondItem="gC9-Db-gvP" secondAttribute="centerX" id="NRJ-Po-9uL"/>
                             <constraint firstItem="cXB-Sm-WJZ" firstAttribute="leading" secondItem="ENI-Ez-sHm" secondAttribute="leading" id="Spg-DT-qQ7"/>
                             <constraint firstItem="cXB-Sm-WJZ" firstAttribute="top" secondItem="ENI-Ez-sHm" secondAttribute="top" id="edK-mQ-qSn"/>
                             <constraint firstItem="ENI-Ez-sHm" firstAttribute="bottom" secondItem="cXB-Sm-WJZ" secondAttribute="bottom" constant="106" id="oHs-tV-L8W"/>
+                            <constraint firstItem="Xgv-Od-q9a" firstAttribute="top" secondItem="cXB-Sm-WJZ" secondAttribute="bottom" constant="26" id="pHx-bY-18F"/>
                             <constraint firstItem="cXB-Sm-WJZ" firstAttribute="centerX" secondItem="gC9-Db-gvP" secondAttribute="centerX" id="w8A-T7-7dN"/>
                         </constraints>
                     </view>
@@ -288,9 +296,13 @@
         <image name="Guitar" width="154.88999938964844" height="480.53799438476562"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="music.note.house.fill" catalog="system" width="128" height="104"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
         <namedColor name="Base Colors">
             <color red="1" green="0.75900000333786011" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
