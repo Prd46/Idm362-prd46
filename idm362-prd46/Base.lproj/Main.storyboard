@@ -18,9 +18,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xQ-A9-je0">
-                                <rect key="frame" x="46.666666666666657" y="79" width="300" height="59.666666666666657"/>
+                                <rect key="frame" x="115.33333333333333" y="64" width="162.66666666666669" height="79.666666666666686"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="H3W-AI-cSf"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="A0H-yC-7ww"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="45"/>
                                 <color key="textColor" name="AccentColor"/>
@@ -28,14 +28,11 @@
                                 <color key="shadowColor" red="0.42479422659999999" green="0.19227322129999999" blue="0.26092215569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a71-0A-IdM" userLabel="Show">
-                                <rect key="frame" x="46.666666666666657" y="148.66666666666666" width="300" height="45"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="a71-0A-IdM" userLabel="Show">
+                                <rect key="frame" x="20" y="148.66666666666666" width="353" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0f-HH-Itd">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="45"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="eyn-cJ-duV"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="195" height="45"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
                                         <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
@@ -43,29 +40,20 @@
                                         <size key="shadowOffset" width="1" height="1"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v1A-wo-pAf">
-                                        <rect key="frame" x="150" y="0.0" width="150" height="45"/>
+                                        <rect key="frame" x="195" y="0.0" width="158" height="45"/>
                                         <color key="backgroundColor" name="AccentColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="4bP-xA-89v"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                         <state key="normal" title="Frets">
                                             <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                         </state>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="LO7-EK-pIA"/>
-                                </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="71q-2F-I9g" userLabel="Guitar">
-                                <rect key="frame" x="46.666666666666657" y="203.66666666666666" width="300" height="45"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="71q-2F-I9g" userLabel="Guitar">
+                                <rect key="frame" x="20" y="203.66666666666666" width="353" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guitar:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLm-Un-PJm">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="45"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="ge2-cI-uCh"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="45"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
                                         <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
@@ -73,11 +61,8 @@
                                         <size key="shadowOffset" width="1" height="1"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6y1-4C-1xS">
-                                        <rect key="frame" x="150" y="0.0" width="150" height="45"/>
+                                        <rect key="frame" x="166" y="0.0" width="187" height="45"/>
                                         <color key="backgroundColor" name="AccentColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="NOH-8H-8fn"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                         <state key="normal" title="Acoustic">
                                             <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
@@ -85,48 +70,25 @@
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="Eff-GX-Dvy"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="mAm-K0-l5P"/>
-                                </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aJg-IG-N1X">
-                                <rect key="frame" x="45" y="258.66666666666669" width="150" height="90"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detune:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSc-NA-UuG">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="DX3-KM-dw5"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
-                                        <color key="textColor" name="AccentColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <color key="shadowColor" red="0.42479422659999999" green="0.19227322129999999" blue="0.26092215569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <size key="shadowOffset" width="1" height="1"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show tabs:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rr2-ds-bfn">
-                                        <rect key="frame" x="0.0" y="50" width="150" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="J9Z-Vj-t1W"/>
-                                            <constraint firstAttribute="width" constant="150" id="buv-GP-tzi"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
-                                        <color key="textColor" name="AccentColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <color key="shadowColor" red="0.42479422659999999" green="0.19227322129999999" blue="0.26092215569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <size key="shadowOffset" width="1" height="1"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Rr2-ds-bfn" firstAttribute="top" secondItem="FSc-NA-UuG" secondAttribute="bottom" id="52c-WF-cJe"/>
-                                    <constraint firstAttribute="height" constant="90" id="xfZ-jz-bPU"/>
-                                    <constraint firstAttribute="width" constant="150" id="yhi-Za-BEm"/>
-                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playback Speed:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Iy-Bl-iKD">
-                                <rect key="frame" x="46.666666666666657" y="358.66666666666669" width="300" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="uld-Is-eeM"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="258.66666666666669" width="353" height="48"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="36"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.42479422659999999" green="0.19227322129999999" blue="0.26092215569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show tabs:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBg-ki-vOO">
+                                <rect key="frame" x="20" y="355.66666666666669" width="353" height="48"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="36"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.42479422659999999" green="0.19227322129999999" blue="0.26092215569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detune:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWu-xg-ytP">
+                                <rect key="frame" x="20" y="454.66666666666669" width="353" height="48"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="36"/>
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
@@ -134,42 +96,50 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zbl-R6-r1e">
-                                <rect key="frame" x="44.666666666666657" y="422" width="304" height="30"/>
+                                <rect key="frame" x="18" y="316.66666666666669" width="357" height="30"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="I7f-kZ-ihL"/>
-                                    <constraint firstAttribute="width" constant="300" id="auc-Cb-LHX"/>
+                                    <constraint firstAttribute="height" constant="29" id="20Q-5P-fuY"/>
                                 </constraints>
                             </slider>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zWS-te-LXb">
-                                <rect key="frame" x="228" y="273" width="94" height="32"/>
-                            </stepper>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dud-qg-hV5">
-                                <rect key="frame" x="252" y="319" width="51" height="31"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mdl-E9-aXJ">
+                                <rect key="frame" x="172" y="413.66666666666669" width="51" height="31"/>
                                 <color key="onTintColor" name="AccentColor"/>
                             </switch>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="6XZ-QL-gPt">
+                                <rect key="frame" x="149.66666666666666" y="522.66666666666663" width="94" height="32"/>
+                            </stepper>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cN1-ow-e4T"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Zbl-R6-r1e" firstAttribute="top" secondItem="8Iy-Bl-iKD" secondAttribute="bottom" constant="15.33" id="1KZ-Gg-yHE"/>
-                            <constraint firstItem="zWS-te-LXb" firstAttribute="leading" secondItem="aJg-IG-N1X" secondAttribute="trailing" constant="33" id="1b8-dn-Ea9"/>
-                            <constraint firstItem="cN1-ow-e4T" firstAttribute="trailing" secondItem="zWS-te-LXb" secondAttribute="trailing" constant="71" id="4tE-8T-15R"/>
+                            <constraint firstItem="cN1-ow-e4T" firstAttribute="trailing" secondItem="rWu-xg-ytP" secondAttribute="trailing" constant="20" id="26L-mU-VZu"/>
+                            <constraint firstItem="a71-0A-IdM" firstAttribute="leading" secondItem="cN1-ow-e4T" secondAttribute="leading" constant="20" id="3sR-TC-YVF"/>
+                            <constraint firstItem="8Iy-Bl-iKD" firstAttribute="leading" secondItem="cN1-ow-e4T" secondAttribute="leading" constant="20" id="5s8-D7-9KE"/>
                             <constraint firstItem="71q-2F-I9g" firstAttribute="top" secondItem="a71-0A-IdM" secondAttribute="bottom" constant="10" id="AvG-2W-QR3"/>
-                            <constraint firstItem="Zbl-R6-r1e" firstAttribute="centerX" secondItem="YIY-o2-Asu" secondAttribute="centerX" id="BEf-5d-Fcr"/>
-                            <constraint firstItem="8Iy-Bl-iKD" firstAttribute="top" secondItem="aJg-IG-N1X" secondAttribute="bottom" constant="10" id="BmR-rx-Z6R"/>
-                            <constraint firstItem="cN1-ow-e4T" firstAttribute="trailing" secondItem="Dud-qg-hV5" secondAttribute="trailing" constant="92" id="Eek-v3-A2O"/>
+                            <constraint firstItem="cN1-ow-e4T" firstAttribute="trailing" secondItem="a71-0A-IdM" secondAttribute="trailing" constant="20" id="BeQ-ZN-E0R"/>
+                            <constraint firstItem="6XZ-QL-gPt" firstAttribute="top" secondItem="rWu-xg-ytP" secondAttribute="bottom" constant="20" id="EUX-aZ-4sS"/>
+                            <constraint firstItem="cN1-ow-e4T" firstAttribute="trailing" secondItem="8Iy-Bl-iKD" secondAttribute="trailing" constant="20" id="HNB-Z1-pFx"/>
+                            <constraint firstItem="cN1-ow-e4T" firstAttribute="trailing" secondItem="71q-2F-I9g" secondAttribute="trailing" constant="20" id="Iat-1v-VoB"/>
                             <constraint firstItem="71q-2F-I9g" firstAttribute="centerX" secondItem="YIY-o2-Asu" secondAttribute="centerX" id="O5Z-Uh-nhp"/>
-                            <constraint firstItem="aJg-IG-N1X" firstAttribute="top" secondItem="71q-2F-I9g" secondAttribute="bottom" constant="10" id="PGY-J4-bwZ"/>
-                            <constraint firstItem="aJg-IG-N1X" firstAttribute="leading" secondItem="71q-2F-I9g" secondAttribute="leading" constant="-1.6666666666666572" id="SZl-iq-TT1"/>
+                            <constraint firstItem="cN1-ow-e4T" firstAttribute="trailing" secondItem="TBg-ki-vOO" secondAttribute="trailing" constant="20" id="TzS-uG-XUr"/>
                             <constraint firstItem="a71-0A-IdM" firstAttribute="centerX" secondItem="YIY-o2-Asu" secondAttribute="centerX" id="XJm-BL-Ts1"/>
-                            <constraint firstItem="7xQ-A9-je0" firstAttribute="top" secondItem="cN1-ow-e4T" secondAttribute="top" constant="20" id="amA-Xg-i8d"/>
-                            <constraint firstItem="zWS-te-LXb" firstAttribute="top" secondItem="71q-2F-I9g" secondAttribute="bottom" constant="24.333333333333343" id="c3a-3N-utr"/>
-                            <constraint firstItem="8Iy-Bl-iKD" firstAttribute="top" secondItem="Dud-qg-hV5" secondAttribute="bottom" constant="8.6666666666666856" id="g4D-VM-B7b"/>
-                            <constraint firstItem="8Iy-Bl-iKD" firstAttribute="centerX" secondItem="YIY-o2-Asu" secondAttribute="centerX" id="gtz-7z-ic9"/>
-                            <constraint firstItem="a71-0A-IdM" firstAttribute="top" secondItem="7xQ-A9-je0" secondAttribute="bottom" constant="10" id="kHp-Hi-Mck"/>
-                            <constraint firstItem="Dud-qg-hV5" firstAttribute="leading" secondItem="aJg-IG-N1X" secondAttribute="trailing" constant="57" id="kJh-Oi-WcX"/>
+                            <constraint firstItem="rWu-xg-ytP" firstAttribute="top" secondItem="Mdl-E9-aXJ" secondAttribute="bottom" constant="10" id="XYf-OQ-rci"/>
+                            <constraint firstItem="cN1-ow-e4T" firstAttribute="trailing" secondItem="Zbl-R6-r1e" secondAttribute="trailing" constant="20" id="a1n-Lj-lsH"/>
+                            <constraint firstItem="7xQ-A9-je0" firstAttribute="top" secondItem="cN1-ow-e4T" secondAttribute="top" constant="5" id="amA-Xg-i8d"/>
+                            <constraint firstItem="TBg-ki-vOO" firstAttribute="top" secondItem="Zbl-R6-r1e" secondAttribute="bottom" constant="10" id="eAl-lq-Vgd"/>
+                            <constraint firstItem="71q-2F-I9g" firstAttribute="leading" secondItem="cN1-ow-e4T" secondAttribute="leading" constant="20" id="f0g-3f-415"/>
+                            <constraint firstItem="Mdl-E9-aXJ" firstAttribute="top" secondItem="TBg-ki-vOO" secondAttribute="bottom" constant="10" id="gTY-BL-qiH"/>
+                            <constraint firstItem="Zbl-R6-r1e" firstAttribute="leading" secondItem="cN1-ow-e4T" secondAttribute="leading" constant="20" id="hqz-zH-UP6"/>
+                            <constraint firstItem="TBg-ki-vOO" firstAttribute="leading" secondItem="cN1-ow-e4T" secondAttribute="leading" constant="20" id="iFL-QX-jR7"/>
+                            <constraint firstItem="a71-0A-IdM" firstAttribute="top" secondItem="7xQ-A9-je0" secondAttribute="bottom" constant="5" id="kHp-Hi-Mck"/>
+                            <constraint firstItem="rWu-xg-ytP" firstAttribute="leading" secondItem="cN1-ow-e4T" secondAttribute="leading" constant="20" id="mjX-QO-DDX"/>
                             <constraint firstItem="7xQ-A9-je0" firstAttribute="centerX" secondItem="YIY-o2-Asu" secondAttribute="centerX" id="reR-11-HUE"/>
+                            <constraint firstItem="71q-2F-I9g" firstAttribute="top" secondItem="YIY-o2-Asu" secondAttribute="top" constant="203.66666666666663" id="ril-JR-IMq"/>
+                            <constraint firstItem="Zbl-R6-r1e" firstAttribute="top" secondItem="8Iy-Bl-iKD" secondAttribute="bottom" constant="10" id="tB1-2r-vHr"/>
+                            <constraint firstItem="Mdl-E9-aXJ" firstAttribute="centerX" secondItem="YIY-o2-Asu" secondAttribute="centerX" id="wQ2-zT-yyF"/>
+                            <constraint firstItem="8Iy-Bl-iKD" firstAttribute="top" secondItem="71q-2F-I9g" secondAttribute="bottom" constant="10" id="zsg-Pl-MXI"/>
+                            <constraint firstItem="6XZ-QL-gPt" firstAttribute="centerX" secondItem="YIY-o2-Asu" secondAttribute="centerX" id="zwi-ST-PKi"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -180,7 +150,7 @@
     </scenes>
     <resources>
         <namedColor name="AccentColor">
-            <color red="1" green="0.77169921120964813" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="1" green="0.7720000147819519" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
