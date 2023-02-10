@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DA2FD80E2979914200E97C05 /* Build configuration list for PBXProject "Chordlord" */;
+			buildConfigurationList = DA2FD80E2979914200E97C05 /* Build configuration list for PBXProject "idm362-prd46" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -335,7 +335,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA2FD80E2979914200E97C05 /* Build configuration list for PBXProject "Chordlord" */ = {
+		DA2FD80E2979914200E97C05 /* Build configuration list for PBXProject "idm362-prd46" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA2FD8252979914400E97C05 /* Debug */,
