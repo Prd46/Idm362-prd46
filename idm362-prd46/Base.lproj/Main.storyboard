@@ -12,7 +12,7 @@
         <!--Main-->
         <scene sceneID="Wk1-eR-hkq">
             <objects>
-                <viewController id="CXe-OH-Eed" sceneMemberID="viewController">
+                <viewController id="CXe-OH-Eed" customClass="ViewControllerFrets" customModule="Chordlord" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zu0-h7-01e">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,7 +44,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cMajor" translatesAutoresizingMaskIntoConstraints="NO" id="qCb-Ip-44J">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="C Major" translatesAutoresizingMaskIntoConstraints="NO" id="qCb-Ip-44J">
                                 <rect key="frame" x="20" y="59" width="353" height="643"/>
                             </imageView>
                         </subviews>
@@ -64,6 +64,11 @@
                     <tabBarItem key="tabBarItem" title="Main" image="music.note.house.fill" catalog="system" id="B1i-yI-csp" userLabel="Main">
                         <color key="badgeColor" name="AccentColor"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="fretsImage" destination="qCb-Ip-44J" id="Zac-2d-NB1"/>
+                        <outlet property="keyMenuButton" destination="RwF-Cz-GJ9" id="f6y-MS-L9N"/>
+                        <outlet property="typeMenuButton" destination="PKc-Ly-oNG" id="3HD-RZ-QJS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dqs-Nr-LmF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -236,7 +241,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cMajor" width="692.33331298828125" height="1317.3333740234375"/>
+        <image name="C Major" width="692.33331298828125" height="1317.3333740234375"/>
         <image name="first" width="85.666664123535156" height="85.666664123535156"/>
         <image name="fourth" width="85.333335876464844" height="85.666664123535156"/>
         <image name="music.note.house.fill" catalog="system" width="128" height="104"/>

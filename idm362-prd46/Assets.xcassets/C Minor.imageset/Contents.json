@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "cMajor.png",
+      "filename" : "CMinorChord.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "cMajor@2x.png",
+      "filename" : "CMinorChord@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "cMajor@3x.png",
+      "filename" : "CMinorChord@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -13,6 +13,7 @@
 		DA2FD81E2979914200E97C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2FD81C2979914200E97C05 /* Main.storyboard */; };
 		DA2FD8202979914400E97C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2FD81F2979914400E97C05 /* Assets.xcassets */; };
 		DA2FD8232979914400E97C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2FD8212979914400E97C05 /* LaunchScreen.storyboard */; };
+		DAEA97A829A5346F0080CB76 /* ViewControllerFrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEA97A729A5346F0080CB76 /* ViewControllerFrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DA2FD81F2979914400E97C05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA2FD8222979914400E97C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA2FD8242979914400E97C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAEA97A729A5346F0080CB76 /* ViewControllerFrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				DA2FD8182979914200E97C05 /* SceneDelegate.swift */,
 				DA2FD81A2979914200E97C05 /* ViewController.swift */,
 				DA2FD81C2979914200E97C05 /* Main.storyboard */,
+				DAEA97A729A5346F0080CB76 /* ViewControllerFrets.swift */,
 				DA2FD81F2979914400E97C05 /* Assets.xcassets */,
 				DA2FD8212979914400E97C05 /* LaunchScreen.storyboard */,
 				DA2FD8242979914400E97C05 /* Info.plist */,
@@ -141,6 +144,7 @@
 				DA2FD81B2979914200E97C05 /* ViewController.swift in Sources */,
 				DA2FD8172979914200E97C05 /* AppDelegate.swift in Sources */,
 				DA2FD8192979914200E97C05 /* SceneDelegate.swift in Sources */,
+				DAEA97A829A5346F0080CB76 /* ViewControllerFrets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
