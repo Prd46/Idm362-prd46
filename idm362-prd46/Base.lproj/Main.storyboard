@@ -41,6 +41,9 @@
                                             <color key="baseForegroundColor" name="AccentColor"/>
                                             <color key="baseBackgroundColor" name="AccentColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="playButton:" destination="CXe-OH-Eed" eventType="touchUpInside" id="VAh-HB-RzP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -108,14 +111,14 @@
                                 <color key="shadowColor" red="0.42479422659999999" green="0.19227322129999999" blue="0.26092215569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The numbered circles indicate what finger to place on what fret in order to play each chord." lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRe-RP-Io6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The numbered circles indicate what finger to place on what fret in order to play each chord. " lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRe-RP-Io6">
                                 <rect key="frame" x="20" y="275.66666666666669" width="353" height="40.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If a string has an X on the top, the string is either muted with another finger or is not strummed at all." lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe5-Xz-qXP">
-                                <rect key="frame" x="20" y="416" width="353" height="61"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An X on top means the string is not played." lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe5-Xz-qXP">
+                                <rect key="frame" x="20" y="416" width="353" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -196,8 +199,14 @@
                                     <constraint firstAttribute="height" constant="44" id="v2N-FS-5bo"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If a string has a 0 on the top, the string is played without any fingers on the fret." lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyj-K7-DdS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A 0 on top means the string is played, but not fretted." lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyj-K7-DdS">
                                 <rect key="frame" x="20" y="370.33333333333331" width="353" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If there is multiple of the same number, lay your finger flat to cover all the strings with that number." lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIt-ob-NcF">
+                                <rect key="frame" x="20" y="441.33333333333331" width="353" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -213,7 +222,9 @@
                             <constraint firstItem="wpz-wl-EWs" firstAttribute="leading" secondItem="F4h-hc-BM1" secondAttribute="leading" constant="20" id="8Np-Ex-bcg"/>
                             <constraint firstItem="F4h-hc-BM1" firstAttribute="trailing" secondItem="wSP-tx-Pny" secondAttribute="trailing" constant="20" id="AHB-o0-K2A"/>
                             <constraint firstItem="wSP-tx-Pny" firstAttribute="leading" secondItem="mZR-Xm-gc6" secondAttribute="leading" constant="20" id="AsP-yo-sxF"/>
+                            <constraint firstItem="sIt-ob-NcF" firstAttribute="top" secondItem="Pe5-Xz-qXP" secondAttribute="bottom" constant="5" id="Avc-Er-u6U"/>
                             <constraint firstItem="F4h-hc-BM1" firstAttribute="trailing" secondItem="vRe-RP-Io6" secondAttribute="trailing" constant="20" id="CG4-jj-IKn"/>
+                            <constraint firstItem="F4h-hc-BM1" firstAttribute="trailing" secondItem="sIt-ob-NcF" secondAttribute="trailing" constant="20" id="EN7-ay-Ua5"/>
                             <constraint firstItem="wSP-tx-Pny" firstAttribute="top" secondItem="wpz-wl-EWs" secondAttribute="bottom" constant="5" id="G3P-wh-Gme"/>
                             <constraint firstItem="Eyj-K7-DdS" firstAttribute="top" secondItem="8zf-2v-ycR" secondAttribute="bottom" constant="5" id="KF5-Ry-KJy"/>
                             <constraint firstItem="F4h-hc-BM1" firstAttribute="trailing" secondItem="8zf-2v-ycR" secondAttribute="trailing" constant="20" id="Q3P-TY-40H"/>
@@ -227,6 +238,7 @@
                             <constraint firstItem="F4h-hc-BM1" firstAttribute="trailing" secondItem="bwG-Fr-ZUh" secondAttribute="trailing" constant="50" id="tmy-V4-3eI"/>
                             <constraint firstItem="F4h-hc-BM1" firstAttribute="trailing" secondItem="wpz-wl-EWs" secondAttribute="trailing" constant="20" id="tnC-0g-HeV"/>
                             <constraint firstItem="bwG-Fr-ZUh" firstAttribute="leading" secondItem="F4h-hc-BM1" secondAttribute="leading" constant="50" id="uTK-pZ-Sgy"/>
+                            <constraint firstItem="sIt-ob-NcF" firstAttribute="leading" secondItem="F4h-hc-BM1" secondAttribute="leading" constant="20" id="xrh-i6-qDX"/>
                             <constraint firstItem="vRe-RP-Io6" firstAttribute="top" secondItem="bwG-Fr-ZUh" secondAttribute="bottom" constant="5" id="yBz-nS-b30"/>
                             <constraint firstItem="wpz-wl-EWs" firstAttribute="top" secondItem="ct3-G7-lys" secondAttribute="bottom" constant="5" id="yh8-nH-SsK"/>
                         </constraints>
@@ -244,9 +256,9 @@
         <image name="C Major" width="692.33331298828125" height="1317.3333740234375"/>
         <image name="first" width="85.666664123535156" height="85.666664123535156"/>
         <image name="fourth" width="85.333335876464844" height="85.666664123535156"/>
-        <image name="music.note.house.fill" catalog="system" width="128" height="104"/>
-        <image name="play.fill" catalog="system" width="117" height="128"/>
-        <image name="questionmark.circle" catalog="system" width="128" height="123"/>
+        <image name="music.note.house.fill" catalog="system" width="32" height="32"/>
+        <image name="play.fill" catalog="system" width="32" height="32"/>
+        <image name="questionmark.circle" catalog="system" width="32" height="32"/>
         <image name="second" width="85.666664123535156" height="85.333335876464844"/>
         <image name="third" width="85.666664123535156" height="85.333335876464844"/>
         <namedColor name="AccentColor">
