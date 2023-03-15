@@ -256,9 +256,9 @@
         <image name="C Major" width="692.33331298828125" height="1317.3333740234375"/>
         <image name="first" width="85.666664123535156" height="85.666664123535156"/>
         <image name="fourth" width="85.333335876464844" height="85.666664123535156"/>
-        <image name="music.note.house.fill" catalog="system" width="32" height="32"/>
-        <image name="play.fill" catalog="system" width="32" height="32"/>
-        <image name="questionmark.circle" catalog="system" width="32" height="32"/>
+        <image name="music.note.house.fill" catalog="system" width="128" height="104"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
+        <image name="questionmark.circle" catalog="system" width="128" height="123"/>
         <image name="second" width="85.666664123535156" height="85.333335876464844"/>
         <image name="third" width="85.666664123535156" height="85.333335876464844"/>
         <namedColor name="AccentColor">

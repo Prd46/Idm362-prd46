@@ -42,11 +42,16 @@ class ViewControllerFrets: UIViewController {
             }
             keyMenuButton.menu = UIMenu(children : [
                 UIAction(title: "C", state: .on, handler: optionsObj),
+                UIAction(title: "C#", handler: optionsObj),
                 UIAction(title: "D", handler: optionsObj),
+                UIAction(title: "D#", handler: optionsObj),
                 UIAction(title: "E", handler: optionsObj),
                 UIAction(title: "F", handler: optionsObj),
+                UIAction(title: "F#", handler: optionsObj),
                 UIAction(title: "G", handler: optionsObj),
+                UIAction(title: "G#", handler: optionsObj),
                 UIAction(title: "A", handler: optionsObj),
+                UIAction(title: "A#", handler: optionsObj),
                 UIAction(title: "B", handler: optionsObj)
                 
             ])
@@ -67,6 +72,14 @@ class ViewControllerFrets: UIViewController {
             typeMenuButton.menu = UIMenu(children : [
                 UIAction(title: "Major", state: .on, handler: optionsObj2),
                 UIAction(title: "Minor", handler: optionsObj2),
+                UIAction(title: "Major 6th", handler: optionsObj2),
+                UIAction(title: "Minor 6th", handler: optionsObj2),
+                UIAction(title: "7th", handler: optionsObj2),
+                UIAction(title: "Major 7th", handler: optionsObj2),
+                UIAction(title: "Minor 7th", handler: optionsObj2),
+                UIAction(title: "7th Augmented 5th", handler: optionsObj2),
+                UIAction(title: "7th Diminished 5th", handler: optionsObj2),
+                UIAction(title: "9th", handler: optionsObj2),
                 
             ])
             typeMenuButton.showsMenuAsPrimaryAction = true
