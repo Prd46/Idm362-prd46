@@ -24,6 +24,8 @@ class ViewControllerFrets: UIViewController {
         super.viewDidLoad()
         setUpPopUpButton()
         setUpPopUpButton2()
+        keyMenuButton.layer.cornerRadius = 6
+        typeMenuButton.layer.cornerRadius = 6
         // Do any additional setup after loading the view.
     }
     
@@ -72,13 +74,13 @@ class ViewControllerFrets: UIViewController {
             typeMenuButton.menu = UIMenu(children : [
                 UIAction(title: "Major", state: .on, handler: optionsObj2),
                 UIAction(title: "Minor", handler: optionsObj2),
-                UIAction(title: "Major 6th", handler: optionsObj2),
-                UIAction(title: "Minor 6th", handler: optionsObj2),
+//                UIAction(title: "Major 6th", handler: optionsObj2),
+//                UIAction(title: "Minor 6th", handler: optionsObj2),
                 UIAction(title: "7th", handler: optionsObj2),
                 UIAction(title: "Major 7th", handler: optionsObj2),
                 UIAction(title: "Minor 7th", handler: optionsObj2),
-                UIAction(title: "7th Augmented 5th", handler: optionsObj2),
-                UIAction(title: "7th Diminished 5th", handler: optionsObj2),
+//                UIAction(title: "7th Augmented 5th", handler: optionsObj2),
+//                UIAction(title: "7th Diminished 5th", handler: optionsObj2),
                 UIAction(title: "9th", handler: optionsObj2),
                 
             ])
